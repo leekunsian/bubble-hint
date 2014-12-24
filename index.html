@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Bubble Hint範例</title>
+		<link rel="stylesheet" type="text/css" href="speech-bubbles.css" />
+		<script src="jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div style="width: 960px; margin: 20px auto;">
+			<input type="text" id="text1" value="" data-tip-text="在此輸入文字" data-tip-marginleft="3" /><br />
+			<input type="button" id="button1" value="按鈕" data-tip-text="請按我" data-tip-buttontext="下一步" data-tip-marginleft="15" /><br />			
+			<span id="span1" data-tip-text="hahaha" data-tip-direction="right" data-tip-marginleft="-5" data-tip-margintop="-1">123123123</span>
+		</div>
+		<script src="bubble_hint.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				bubble_hint(['span1', 'text1', 'button1']);
+			});
+		</script>
+	</body>
+</html>
